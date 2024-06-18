@@ -1,0 +1,12 @@
+name: GMTool build assistant
+description: A collection of presets for the GMTool build.
+authors: ["smokingplaya"]
+runner: powershell
+
+presets:
+    default:
+        execute:
+        - cargo r
+    start:
+        execute:
+        - target/debug/gmt.exe start
